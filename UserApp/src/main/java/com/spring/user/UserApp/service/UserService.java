@@ -25,4 +25,10 @@ public class UserService {
                 .findFirst()
                 .orElse(null);
     }
+
+    public User addUser(User user){
+        User newUser = User.builder().id(++id).name(user.name()).dob(user.dob()).build();
+        userLst.add(newUser);
+        return newUser;
+    }
 }
