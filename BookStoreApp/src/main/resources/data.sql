@@ -1,0 +1,3 @@
+insert into book_store (id,book_name,book_price,discounted_price,published_date) values(101,'Tamil Kanavu',405.10,399.12,'1987-12-08');
+insert into book_store (id,book_name,book_price,discounted_price,published_date) values(102,'Ponniyin Selvan',705.10,999.12,'2003-07-12');
+insert into book_store (id,book_name,book_price,discounted_price,published_date) values(103,'Thirukural',805.10,1399.12,'1996-12-08');
