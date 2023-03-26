@@ -1,0 +1,8 @@
+{
+  "id": "{{randomInt lower=5 upper=9}}",
+  "employeeName": "krishna",
+  "department": "software engineering",
+  "joiningDate": "{{now offset='10 years' format='yyyy-MM-dd'}}",
+  "employeeId": "{{{pickRandom '1' '2' '3'}}}",
+  "uuid": "{{randomValue length=33 type='ALPHANUMERIC'}}"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 123,
+    "modelName": "Toyota_Chrysta",
+    "price": "2300000",
+    "manufactureYear": [
+      2021,
+      3,
+      26
+    ]
+  }
+]
