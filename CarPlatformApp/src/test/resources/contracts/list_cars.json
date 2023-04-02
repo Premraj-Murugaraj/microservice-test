@@ -5,8 +5,18 @@
     "price": "2300000",
     "manufactureYear": [
       2021,
-      3,
-      26
+      4,
+      2
+    ]
+  },
+  {
+    "id": 124,
+    "modelName": "Lexus",
+    "price": "4300000",
+    "manufactureYear": [
+      2021,
+      4,
+      2
     ]
   }
 ]

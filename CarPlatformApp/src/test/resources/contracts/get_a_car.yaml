@@ -1,0 +1,16 @@
+description: get a single car from toyota
+name: should return a car from toyota
+request:
+  method: GET
+  url: /api/aCar/123
+
+response:
+  status: 200
+  body:
+    id: 123
+    modelName: Toyota_Chrysta
+    price: 2300000
+    manufactureYear:
+        - 2021
+        - 4
+        - 2

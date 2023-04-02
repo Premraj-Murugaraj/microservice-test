@@ -14,6 +14,9 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyInt;
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 public class ContractBaseTest {
 
@@ -27,10 +30,13 @@ public class ContractBaseTest {
     void setUp(){
 
         List<Car> car = Arrays.asList(
-                Car.builder().id(123).modelName("Toyota_Chrysta").price("2300000").manufactureYear(LocalDate.now().minusYears(2)).build()
+                Car.builder().id(123).modelName("Toyota_Chrysta").price("2300000").manufactureYear(LocalDate.now().minusYears(2)).build(),
+                Car.builder().id(124).modelName("Lexus").price("4300000").manufactureYear(LocalDate.now().minusYears(2)).build()
         );
 
         RestAssuredMockMvc.standaloneSetup(carController);
         Mockito.when(carService.retrieveAllCars()).thenReturn(car);
+        Mockito.when(carService.getACar(anyInt())).thenReturn(car.get(0));
+        Mockito.when(carService.addCar(any(Car.class))).thenReturn(car.get(0));
     }
 }
